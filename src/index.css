@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Nunito+Sans:opsz,wght@6..12,200&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200&family=Roboto:wght@300&display=swap');
+*{
+  /* font-family: 'Maven Pro', sans-serif; */
+  /* font-family: 'Roboto', sans-serif; */
+  /* font-family: 'Roboto Flex', sans-serif;  */
+  font-family: 'Maven Pro', sans-serif;
+}
+
+
+.list-dot::before {
+  content: "•"; /* Unicode character for a bullet point */
+  margin-right: 0.2rem; /* Adjust as needed */
+}
