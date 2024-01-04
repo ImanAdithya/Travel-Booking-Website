@@ -23,14 +23,48 @@ export class Home extends Component {
                         <button className='bg-[#4F46E5] text-white px-3 xl:px-4 py-3 xl:py-4 text-lg rounded-2xl font-bold'> Start your Search</button>
                     </div>
 
-                    {/*<div className='mt-64 hidden xl:block'>*/}
-                    {/*    <ol className='flex flex-row  text-xl gap-5 font-bold'>*/}
-                    {/*        <li className='list-dot'>Stays</li>*/}
-                    {/*        <li className='opacity-65'>Experiences</li>*/}
-                    {/*        <li className='opacity-65'>Cars</li>*/}
-                    {/*        <li className='opacity-65'>Flights</li>*/}
-                    {/*    </ol>*/}
-                    {/*</div>*/}
+                    <div className='mt-10 hidden 2xl:block'>
+                        <ol className='flex flex-row  text-xl gap-5 font-bold'>
+                            <li className='list-dot'>Stays</li>
+                            <li className='opacity-65'>Experiences</li>
+                            <li className='opacity-65'>Cars</li>
+                            <li className='opacity-65'>Flights</li>
+                        </ol>
+                    </div>
+
+                   <div className='hidden 2xl:block'>
+                       <div className='flex flex-row gap-20 shadow-2xl rounded-xl px-4 py-5 '>
+
+                           <div className='flex flex-row gap-2 items-center'>
+                               <LocationOn className='opacity-40' style={{ fontSize: '1rem' }}></LocationOn>
+
+                               <div className='flex flex-col'>
+                                   <span className='text-md font-bold'>Location</span>
+                                   <span className='opacity-50'>Where are you going?</span>
+                               </div>
+                           </div>
+
+
+                           <div className='flex flex-row gap-2 items-center'>
+                               <CalendarToday className='opacity-40' style={{ fontSize: '1rem' }}></CalendarToday>
+
+                               <div className='flex flex-col'>
+                                   <span className='text-md font-bold'>Feb 06 - Feb 23</span>
+                                   <span className='opacity-50'>Check in - Check out</span>
+                               </div>
+                           </div>
+
+                           <div className='flex flex-row gap-2 items-center'>
+                               <PersonAdd className='opacity-40' style={{ fontSize: '1rem' }}></PersonAdd>
+
+                               <div className='flex flex-col'>
+                                   <span className='text-md font-bold'>4 Guests</span>
+                                   <span className='opacity-50'>Guests</span>
+                               </div>
+                           </div>
+
+                       </div>
+                   </div>
 
                 </div>
 
@@ -38,38 +72,6 @@ export class Home extends Component {
                 <div className='w-[25rem] xl:w-[60rem]'>
                     <img src={home}/>
                 </div>
-
-                {/*<div className='flex flex-row gap-36 shadow-2xl rounded-xl fixed bottom-20 left-48 m-auto p-6 z-30 '>*/}
-
-                {/*    <div className='flex flex-row gap-2 items-center'>*/}
-                {/*        <LocationOn className='opacity-40' style={{ fontSize: '2rem' }}></LocationOn>*/}
-
-                {/*        <div className='flex flex-col'>*/}
-                {/*            <span className='text-lg font-bold'>Location</span>*/}
-                {/*            <span className='opacity-50'>Where are you going?</span>*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-
-
-                {/*    <div className='flex flex-row gap-2 items-center'>*/}
-                {/*        <CalendarToday className='opacity-40' style={{ fontSize: '2rem' }}></CalendarToday>*/}
-
-                {/*        <div className='flex flex-col'>*/}
-                {/*            <span className='text-lg font-bold'>Feb 06 - Feb 23</span>*/}
-                {/*            <span className='opacity-50'>Check in - Check out</span>*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-
-                {/*    <div className='flex flex-row gap-2 items-center'>*/}
-                {/*        <PersonAdd className='opacity-40' style={{ fontSize: '2rem' }}></PersonAdd>*/}
-
-                {/*        <div className='flex flex-col'>*/}
-                {/*            <span className='text-lg font-bold'>4 Guests</span>*/}
-                {/*            <span className='opacity-50'>Guests</span>*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-
-                {/*</div>*/}
             </div>
         );
     }

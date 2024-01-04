@@ -34,7 +34,7 @@ export class SectionFive extends Component {
                         </div>
                     </div>
 
-                    <div className='flex flex-row flex-wrap gap-6 '>
+                    <div className='flex flex-row flex-wrap gap-6 justify-center lg:justify-start '>
 
                         <div className='flex flex-col gap-2 w-[21rem] h-[28rem] rounded-2xl bg-white shadow-lg'>
                             <img className='rounded-tl-2xl rounded-tr-2xl' src={t1}/>
